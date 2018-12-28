@@ -128,7 +128,10 @@
 
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.0</version>
+	  <version>3.0</version>
+	  <configuration>
+		          <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+	  </configuration>
         </plugin>
 
         <plugin>
